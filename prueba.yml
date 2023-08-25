@@ -1,0 +1,16 @@
+
+config:
+  target: http://192.168.100.3
+  phases:
+    - name: rampup_rate
+      duration: 60
+      arrivalRate: 10
+      rampto: 50
+
+scenarios:
+  - name: pets
+    flow:
+      - get:
+          url: http://192.168.100.3
+    
+            #Yml para test con artillery    
